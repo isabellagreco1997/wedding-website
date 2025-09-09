@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: './', // This ensures relative paths work on GitHub Pages
+  base: '/wedding-website/', // This ensures correct paths for GitHub Pages
 });
