@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -16,29 +17,32 @@ import LisaDavid from './pages/LisaDavid';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={
-        <motion.div 
-          className="min-h-screen"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Header />
-          <Hero />
-          <Features />
-          <Mockups />
-          <Testimonials />
-          <WhyWeddingWebsite />
-          <About />
-          <CTA />
-          <Footer />
-        </motion.div>
-      } />
-      <Route path="/sarah-mike" element={<SarahMike />} />
-      <Route path="/emma-james" element={<EmmaJames />} />
-      <Route path="/lisa-david" element={<LisaDavid />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={
+          <motion.div 
+            className="min-h-screen"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Header />
+            <Hero />
+            <Features />
+            <Mockups />
+            <Testimonials />
+            <WhyWeddingWebsite />
+            <About />
+            <CTA />
+            <Footer />
+          </motion.div>
+        } />
+        <Route path="/sarah-mike" element={<SarahMike />} />
+        <Route path="/emma-james" element={<EmmaJames />} />
+        <Route path="/lisa-david" element={<LisaDavid />} />
+      </Routes>
+    </>
   );
 }
 
