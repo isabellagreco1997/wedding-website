@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -17,7 +18,12 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={
-        <div className="min-h-screen">
+        <motion.div 
+          className="min-h-screen"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <Header />
           <Hero />
           <Features />
@@ -27,7 +33,7 @@ function App() {
           <About />
           <CTA />
           <Footer />
-        </div>
+        </motion.div>
       } />
       <Route path="/sarah-mike" element={<SarahMike />} />
       <Route path="/emma-james" element={<EmmaJames />} />
