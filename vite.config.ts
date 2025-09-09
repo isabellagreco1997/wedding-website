@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/wedding-website/', // This ensures correct paths for GitHub Pages
+  base: '/', // Root path for Vercel deployment
 });
