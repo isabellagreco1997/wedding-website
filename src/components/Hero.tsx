@@ -24,14 +24,14 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center relative z-10"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
           <motion.h1 
             className="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <span className="text-2xl md:text-6xl block" style={{fontFamily: 'Dancing Script, cursive'}}>
@@ -44,8 +44,8 @@ const Hero = () => {
           
           <motion.p 
             className="text-sm md:text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             Your perfect wedding website delivered in 3 days, with unlimited adjustments until your big day.
@@ -53,8 +53,8 @@ const Hero = () => {
 
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <motion.button
@@ -92,8 +92,8 @@ const Hero = () => {
 
           <motion.div 
             className="text-xs md:text-sm text-white drop-shadow-md"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             Free consultation • 3-day delivery • Unlimited adjustments • Mobile-friendly
